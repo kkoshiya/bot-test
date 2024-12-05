@@ -1,6 +1,11 @@
 import { Telegraf } from 'telegraf';
+import 'dotenv/config';
+//const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
 const bot = new Telegraf('7726387189:AAFxLd3-TdrXXxGVUMiVf5WA4D2PUUWvQ1Y');
 import axios from 'axios';
+import express from 'express';
+
+const app = express();
 
 let users = {};
 

@@ -8,7 +8,7 @@ import express from 'express';
 const app = express();
 
 // Webhook setup
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 
 // Set webhook (replace with your Render app URL)
 bot.telegram.setWebhook(`https://bot-test-xt1z.onrender.com`);

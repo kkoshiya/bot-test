@@ -1,6 +1,7 @@
 import { Telegraf } from 'telegraf';
 import 'dotenv/config';
-const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
+//const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
+const bot = new Telegraf("7508930200:AAFKahQtN-Cj-mQBTZx_B_GFWkLBNPmHg8U");
 import { ethers } from 'ethers';
 import { JsonRpcProvider } from 'ethers';
 import express from 'express';

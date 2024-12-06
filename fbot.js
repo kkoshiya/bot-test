@@ -7,11 +7,7 @@ import { JsonRpcProvider } from 'ethers';
 import express from 'express';
 
 const app = express();
-
-// Webhook setup
 const PORT = process.env.PORT || 10000;
-
-// Set webhook (replace with your Render app URL)
 bot.telegram.setWebhook(`https://bot-test-xt1z.onrender.com`);
 
 // Express route to handle webhook
@@ -38,5 +34,10 @@ bot.command('send', async (ctx) => {
     const receipt = await tx.wait();
     ctx.reply(`Transfer of 0.01 ETH successful! \nTransaction Hash: ${receipt.hash}`);
 });
+
+bot.command('start', async (ctx) => {
+    ctx.reply(`way to start`);
+});
+
 
 bot.launch();
